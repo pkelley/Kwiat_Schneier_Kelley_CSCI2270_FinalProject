@@ -53,7 +53,7 @@ void keySound::buildAndPlay(){
 }
 void keySound::playSound(keyS key){
   sf::Keyboard kb;
-  while(1){
+  while(!kb.isKeyPressed(sf::Keyboard::Escape)){
     for (size_t i = 0; i < 8; i++) {//cycles through all assigned keys so you can use following code lines simultaneously for all of them
       if (kb.isKeyPressed(keySound::num2Key(i)) && key.isPlay==false){//checks if specific key is pressed and correlating sound is already playing
         key.isPlay=true;//set the bool to true so the play comand doesn't occur while the loop is playing
