@@ -23,7 +23,7 @@ class Link
         Link();
         ~Link();
         void createList(std::string);
-        void readFile(std::string, std::string);
+        void readFile(std::string);
         void search(std::string);
         //void transmitMsg(char *); //this is like a string
         std::string calcASC(int);

@@ -1,10 +1,14 @@
 #include <iostream>
 #include "Link.h"
- using namespace std;
+#include <string>
+#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Audio.hpp>
+#include "keySound.h"
+using namespace std;
 
  int main(int argc, char *argv[])
  {
-    string file = argv[1];
+    string file = "soundFiles.txt";
     Link Files;
     Files.createList(file);
      
@@ -24,7 +28,8 @@
          }
          else if (answer=="2")
          {
-
+            keySound k;
+            k.buildAndPlay();
          }
 
          else if(answer=="3")

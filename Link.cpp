@@ -37,7 +37,7 @@ void Link::createList(string fileName){
     	array[i]->next = array[i+1];
     }
 }
-void Link::readFile(){
+void Link::readFile(string fileName){
 
 }
 void Link::search(string value){
