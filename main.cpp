@@ -2,8 +2,12 @@
 #include "Link.h"
  using namespace std;
 
- int main()
+ int main(int argc, char *argv[])
  {
+    string file = argv[1];
+    Link Files;
+    Files.createList(file);
+     
      bool quit=false;
      while(!quit)
      {

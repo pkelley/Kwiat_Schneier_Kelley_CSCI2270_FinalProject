@@ -12,7 +12,7 @@ struct Node{
     {
         fileName = initName;
         next = initNext;
-        message = initMessage;
+        key = initMessage;
     }
 
 };
@@ -22,10 +22,11 @@ class Link
     public:
         Link();
         ~Link();
+        void createList(std::string);
         void readFile(std::string, std::string);
         void search(std::string);
         //void transmitMsg(char *); //this is like a string
-        int calcASC(std::string);
+        std::string calcASC(int);
         void printFiles();
     protected:
     private:
