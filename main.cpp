@@ -13,9 +13,8 @@
      {
          cout<<"===Main Menu==="<<endl;
          cout<<"1. Print Sounds"<<endl;
-         cout<<"2. Find Key"<<endl;
-         cout<<"3. Play Sounds"<<endl;
-         cout<<"4. Quit"<<endl;
+         cout<<"2. Play Sounds"<<endl;
+         cout<<"3. Quit"<<endl;
          string answer;
          cin>>answer;
 
@@ -27,11 +26,8 @@
          {
 
          }
-         else if(answer=="3")
-         {
 
-         }
-         else if(answer=="4")
+         else if(answer=="3")
          {
              quit=true;
              cout<<"Goodbye!"<<endl;
