@@ -33,7 +33,7 @@ void keySound::buildAndPlay(){
     key[i].isPlay=false;//set sound to currently not playing
   }
 
-  while(1){
+  while(!kb.isKeyPressed(sf::Keyboard::Escape)){
     //if(!sf::Keyboard::Z)break;
     for (size_t i = 0; i < 8; i++) {//cycles through all assigned keys so you can use following code lines simultaneously for all of them
       //if(sf::Keyboard::E)break;
