@@ -4,6 +4,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Window/Event.hpp>
 #include "keySound.h"
+#include "Link.h"
 
 using namespace std;
 
@@ -32,8 +33,10 @@ void keySound::buildAndPlay(){
     key[i].isPlay=false;//set sound to currently not playing
   }
 
-  while(!sf::Keyboard::Escape){
+  while(1){
+    //if(!sf::Keyboard::Z)break;
     for (size_t i = 0; i < 8; i++) {//cycles through all assigned keys so you can use following code lines simultaneously for all of them
+      //if(sf::Keyboard::E)break;
       if (kb.isKeyPressed(keySound::num2Key(i)) && key[i].isPlay==false){//checks if specific key is pressed and correlating sound is already playing
         key[i].isPlay=true;//set the bool to true so the play comand doesn't occur while the loop is playing
         key[i].loop.setPitch(1.0);//normalize sound before playing it

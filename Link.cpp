@@ -17,21 +17,27 @@ Link::~Link()
 void Link::createList(string fileName){
 	ifstream inFile;
 	inFile.open(fileName);
-	string line;
-	Node* array[8];
-	while(getline(inFile, line)){
-		istringstream ss(line);
-		string token;
+	string str;
+	Node* array[10];
+	while(getline(inFile, str)){
 		//by spaces
         int count = 0;
-		while(getline(ss, token)) {
-    		Node* node;
-    		node->fileName = token;
-    		node->next = NULL;
-    		node->key = calcASC(count);
-    		array[count] = node;
-    		count++;
-		}
+        string s(str);
+        istringstream iss(s);
+                do{
+                    string sub;
+                    iss >> sub;
+                    if(sub != "") {
+                    	Node* node = new Node;
+    					//cout<<sub<<endl;
+    					node->fileName = sub;
+    					node->next = NULL;
+    					node->key = "a";//calcASC(count);
+    					//cout<<"work"<<endl;
+    					array[count] = node;
+    					count++;
+                    }
+                }while (iss); 
     }
     for(int i=0; i<7; i++){
     	array[i]->next = array[i+1];

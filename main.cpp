@@ -6,12 +6,13 @@
 #include "keySound.h"
 using namespace std;
 
- int main(int argc, char *argv[])
+ int main()
  {
+    //cout<<"d"<<endl;
     string file = "soundFiles.txt";
     Link Files;
     Files.createList(file);
-     
+    //cout<<"d"<<endl;
      bool quit=false;
      while(!quit)
      {
