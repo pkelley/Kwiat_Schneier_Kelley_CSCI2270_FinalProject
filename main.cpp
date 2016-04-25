@@ -11,13 +11,14 @@ using namespace std;
     string file = "soundFiles.txt";
     Link Files;
     Files.createList(file);
-     
+
      bool quit=false;
      while(!quit)
      {
          cout<<"===Main Menu==="<<endl;
          cout<<"1. Print Sounds"<<endl;
          cout<<"2. Play Sounds"<<endl;
+         cout<<"3. Search"<<endl;
          cout<<"3. Quit"<<endl;
          string answer;
          cin>>answer;
@@ -31,8 +32,12 @@ using namespace std;
             keySound k;
             k.buildAndPlay();
          }
-
          else if(answer=="3")
+         {
+
+         }
+
+         else if(answer=="4")
          {
              quit=true;
              cout<<"Goodbye!"<<endl;

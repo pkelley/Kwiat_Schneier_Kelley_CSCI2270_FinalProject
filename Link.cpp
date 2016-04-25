@@ -15,10 +15,16 @@ Link::~Link()
     //destructor
 }
 void Link::createList(string fileName){
-	ifstream inFile;
+	Node *arr = readFile();
+    for(int i=0; i<7; i++){
+    	arr[i]->next = arr[i+1];
+    }
+}
+Node* Link::readFile(string fileName){
+    ifstream inFile;
 	inFile.open(fileName);
 	string line;
-	Node* array[8];
+	Node* arr[8];
 	while(getline(inFile, line)){
 		istringstream ss(line);
 		string token;
@@ -29,25 +35,37 @@ void Link::createList(string fileName){
     		node->fileName = token;
     		node->next = NULL;
     		node->key = calcASC(count);
-    		array[count] = node;
+    		arr[count] = node;
     		count++;
 		}
     }
-    for(int i=0; i<7; i++){
-    	array[i]->next = array[i+1];
-    }
-}
-void Link::readFile(string fileName){
-
+    return arr;
 }
 void Link::search(string value){
-	
+	Node *tmp=head;
+	while(tmp!=NULL)
+    {
+        if(value==tmp->fileName)
+        {
+            cout<<"Found!"<<endl;
+            cout<<tmp->fileName<<":"<<tmp->key<<endl;
+            break;
+        }
+        tmp=tmp->next;
+    }
 }
 
 string Link::calcASC(int value){
-	
+
 }
 void Link::printFiles(){
+
+    Node *tmp=head;
+    while(tmp!=NULL)
+    {
+        cout<<tmp->fileName<<endl;
+        tmp=tmp->next;
+    }
 
 }
 
