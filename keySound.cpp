@@ -18,16 +18,20 @@ keySound::~keySound(){
 void keySound::buildAndPlay(){
   keyS key[8];
   sf::Event event;
+  Link Files;
+  Files.createList("soundFiles.txt");
+  string l = "loops/";
 
   for(int i=0;i<8;i++){//set path to specific file; will change
-      if(i==0) key[i].path="loops/kick3.wav";
-      if(i==1) key[i].path="loops/kick4.wav";
+      l = "loops/";
+      if(i==i) key[i].path= l += Files.getFileName(Files.calcASC(i));
+      /*if(i==1) key[i].path="loops/kick4.wav";
       if(i==2) key[i].path="loops/kick5.wav";
       if(i==3) key[i].path="loops/kick6.wav";
       if(i==4) key[i].path="loops/kick7.wav";
       if(i==5) key[i].path="loops/kick8.wav";
       if(i==6) key[i].path="loops/kick10.wav";
-      if(i==7) key[i].path="loops/kick11.wav";
+      if(i==7) key[i].path="loops/kick11.wav";*/
     key[i].buffer.loadFromFile(key[i].path);//load file into buffer
     key[i].loop.setBuffer(key[i].buffer);//load buffer into sound
     key[i].isPlay=false;//set sound to currently not playing

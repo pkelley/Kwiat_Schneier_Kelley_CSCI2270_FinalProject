@@ -8,32 +8,42 @@ using namespace std;
 
  int main()
  {
-    //cout<<"d"<<endl;
     string file = "soundFiles.txt";
     Link Files;
     Files.createList(file);
-    //cout<<"d"<<endl;
+
      bool quit=false;
      while(!quit)
      {
          cout<<"===Main Menu==="<<endl;
          cout<<"1. Print Sounds"<<endl;
          cout<<"2. Play Sounds"<<endl;
-         cout<<"3. Quit"<<endl;
+         cout<<"3. Search"<<endl;
+         cout<<"4. Quit"<<endl;
          string answer;
+         string search = "";
          cin>>answer;
 
          if(answer=="1")
          {
-
+            Files.printFiles();
          }
          else if (answer=="2")
          {
             keySound k;
             k.buildAndPlay();
+            
+         }
+         else if(answer=="3")
+         {
+            cout<<"Type file name: "<<endl;
+            char a;
+            cin.get(a);
+            getline(cin, search);
+            Files.search(search);
          }
 
-         else if(answer=="3")
+         else if(answer=="4")
          {
              quit=true;
              cout<<"Goodbye!"<<endl;

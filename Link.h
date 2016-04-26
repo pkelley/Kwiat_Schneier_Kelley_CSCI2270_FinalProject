@@ -1,14 +1,15 @@
 #ifndef LINK_H
 #define LINK_H
+#include <vector>
 #include <iostream>
 struct Node{
     std::string fileName;
-    std::string key;
+    char key;
     Node *next;
 
     Node(){}; // default constructor
 
-    Node(std::string initName, Node *initNext, std::string initMessage)
+    Node(std::string initName, Node *initNext, char initMessage)
     {
         fileName = initName;
         next = initNext;
@@ -25,13 +26,15 @@ class Link
         void createList(std::string);
         void readFile(std::string);
         void search(std::string);
-        //void transmitMsg(char *); //this is like a string
-        std::string calcASC(int);
+        std::string getFileName(char);
+        
+        char calcASC(int);
         void printFiles();
     protected:
     private:
         Node *head;
         Node *tail;
+        std::vector<Node*> array;
 };
 
 #endif // NODE_H
