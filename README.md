@@ -1,7 +1,7 @@
 # Kwiat_Schneier_Kelley_CSCI2270_FinalProject
 
 Project Summary
-This project will essentially be a keyboard that plays a different sound each time you hit a letter. The program will use a library called SFML in order to read keyboard signals and play the sounds as a result. We will encorporate a linked list in order to store and accsess the different sounds and their names quickly and efficiently. Methods will include a search function, a function that reads in the filenames and creates the list, and a delete function. 
+This project will essentially be a keyboard that plays a different sound each time you hit a letter. The program will use a library called SFML in order to read keyboard signals and play the sounds as a result. We will encorporate a linked list and 2 classes in order to store and accsess the different sounds and their names quickly and efficiently. Methods will include a search function, a function that reads in the filenames and creates the list a class that plays the sounds and a print function.  
 
 Dependancies
 The program requires you download sfml onto your computer instructions are in the How to Run section of the ReadMe.
