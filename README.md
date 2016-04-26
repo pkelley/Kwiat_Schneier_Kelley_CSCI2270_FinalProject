@@ -10,8 +10,9 @@ System Requirements
 linux already has sfml within it's libraries so all they must do is step 2 in order to install the library. Mac and windows must download the software first and then install. 
 
 Other Helpful Tips
--If you wish to download other sounds all you need to do is download the sound, add the filename to the sounds.txt file, change the size of the array accordingly and run! 
+-If you wish to download other sounds all you need to do is download the sound, add the filename to the sounds.txt file and run! 
 -Once you are in the program the menu will guide you through, if you want to search a sound pull up the print option then the serach and enter one of the filenames it will give you the corresponding key, press "play sound" and enter the key. In order to stop the function from playing sounds hit escape then press enter again and it will take you back to the menu. 
+-The "a" key is really faint! If you cant hear it on your computer try another key.
 
 How to Run
 1. If you are NOT linux You must first google the library sfml c++ in your vm and download the library. If you are using linux you can skip straight to step 2.
@@ -28,5 +29,6 @@ Ian Shneier
 
 Bugs
 Instead of having the sounds option need to press escape and then enter, the program could exit after just the escape is pressed.
+The A key is really faint if you want to download another sound!
 
 
