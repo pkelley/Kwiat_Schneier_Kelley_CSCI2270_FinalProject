@@ -16,4 +16,10 @@ How to Run
 
 g++ -std=c++11 keySound.cpp main.cpp Link.cpp -o sfml -lsfml-graphics -lsfml-window -lsfml-audio -lsfml-network -lsfml-system 
 
+Group Members
+Helena Kwiat
+Preston Kelley 
+Ian Shneier
+
+Bugs
 
