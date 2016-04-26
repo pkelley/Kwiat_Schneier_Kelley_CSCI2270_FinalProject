@@ -22,7 +22,7 @@ void keySound::buildAndPlay(){
   Files.createList("soundFiles.txt");
   string l = "loops/";
 
-  for(int i=0;i<8;i++){//set path to specific file; will change
+  for(int i=0;i<Files.getSizeVector();i++){//set path to specific file; will change
       l = "loops/";
       if(i==i) key[i].path= l += Files.getFileName(Files.calcASC(i));
       /*if(i==1) key[i].path="loops/kick4.wav";

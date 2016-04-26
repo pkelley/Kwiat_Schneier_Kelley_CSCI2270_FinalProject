@@ -30,6 +30,7 @@ class Link
         
         char calcASC(int);
         void printFiles();
+        int getSizeVector();
     protected:
     private:
         Node *head;

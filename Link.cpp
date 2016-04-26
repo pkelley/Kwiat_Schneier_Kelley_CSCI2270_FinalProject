@@ -107,3 +107,6 @@ void Link::printFiles(){
     }
 
 }
+int Link::getSizeVector(){
+	return array.size();
+}
