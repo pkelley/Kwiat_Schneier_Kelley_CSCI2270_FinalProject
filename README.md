@@ -14,7 +14,9 @@ Linux already has sfml within it's libraries so step 1 of the How to Run is not 
 Other Helpful Tips:
 
 -If you wish to download other sounds all you need to do is download the sound and put in the "loops" folder, add the filename to the sounds.txt file and run! 
+
 -Once you are in the program the menu will guide you through, if you want to search a sound pull up the print option to view files, then the search option and enter one of the filenames. It will give you the corresponding key. Press "play sound" and enter the key. In order to stop the function from playing sounds hit escape and it will take you back to the menu. 
+
 -The "a" key/corresponding file is really faint! If you can't hear it on your computer try another key.
 
 How to Run
