@@ -31,9 +31,10 @@ How to Run
 
 6. After the first run, you only need to enter ./sfml to run the program.
 
-Group Members
-Helena Kwiat
-Preston Kelley 
+Group Members:
+
+Helena Kwiat,
+Preston Kelley,
 Ian Shneier
 
 Bugs:
