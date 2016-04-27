@@ -23,6 +23,7 @@ using namespace std;
          string answer;
          string search = "";
          cin>>answer;
+         answer = answer.back();
 
          if(answer=="1")
          {
